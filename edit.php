@@ -26,13 +26,9 @@ $all = $data->fetchAll();
     <div class="container text-center mt-3">
         <h1>Edit User</h1>
         <form class="mt-5 d-flex" method="post">
-        <?php
-        foreach($all as $key => $val){
-        ?>
-        <input class="form-control col-md-4" type="text" name="firstName" placeholder="firstname" value="<?php echo $val['firstName'];?>">
-        <input class="form-control col-md-4" type="text" name="lastName" placeholder="lastname" value="<?php echo $val['lastName'];?>">
-        <input class="form-control col-md-4" type="text" name="address" placeholder="address" value="<?php echo $val['address'];?>">
-            <?php }?>
+        <input class="form-control col-md-4" type="text" name="firstName" placeholder="firstname">
+        <input class="form-control col-md-4" type="text" name="lastName" placeholder="lastname">
+        <input class="form-control col-md-4" type="text" name="address" placeholder="address">
         <input class="btn btn-primary" type="submit" name="edit" value="Save">
 
         </form>
